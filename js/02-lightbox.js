@@ -18,6 +18,4 @@ function createGalleryMarkup(galleryItems) {
 
 const galleryContainer = document.querySelector(".gallery");
 galleryContainer.insertAdjacentHTML("beforeend", createGalleryMarkup(galleryItems));
-let galleryLightBox = new SimpleLightbox(".gallery a", { captionData: "alt", captionPosition: "bottom", captionDelay: 250 });
-
-// galleryLightBox.on("show.simpleLightBox", function () {});
+let galleryLightBox = new SimpleLightbox(".gallery a", { captionsData: "alt", captionDelay: 250 });
